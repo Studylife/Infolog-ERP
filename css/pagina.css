@@ -1,0 +1,582 @@
+@font-face {
+  font-family: 'roboto';
+  font-style: normal;
+  src: local('roboto'), local('roboto'), url(../font/roboto.ttf);
+}
+
+html, body{height: 100%; width: 100%;}
+body{
+    background: #f2f2f2;
+    margin: 0;
+    font-family: roboto, sans-serif;
+    color: #181818;
+}
+/*FORMATACAO BOTÕES PADRAO*/
+#botao1{
+    background: #00a6d0;
+    color: #ffffff;
+    font-size: 1.2em;
+    display: inline-block;
+    padding: 15px 30px 15px 30px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#botaoinput{
+    background: #00a6d0;
+    color: #ffffff;
+    border: 1px solid #00a6d0;
+    font-size: 1.4em;
+    padding: 15px 30px 15px 30px;
+    margin: 30px 0 0 0;
+    border-radius: 3px;
+    cursor: pointer;
+    vertical-align: bottom;
+}
+h1{
+    margin: 0;
+}
+
+/*TAMANHOS INPUT*/
+#inputmini input{
+    width: 50px;
+}
+#inputpequeno input{
+    width: 150px;
+}
+#inputmedio input,
+#inputmedio select{
+    width: 285px;
+}
+#inputgrande input{
+    width: 400px;
+}
+#inputgrande select{
+    width: 550px;
+}
+#inputfull input,
+#inputfull select,
+#inputfull textarea{
+    width: 100%;
+}
+
+.float{
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: top;
+}
+
+/*FORMATACAO INPUT PADRAO*/
+input, select,textarea{
+    padding: 15px;
+    border: 1px solid #e5e5e5;
+    display: block;
+    background: #ffffff;
+}
+textarea{
+    height: 150px;
+}
+
+/*FORMULARIO GERAL DE REGISTRO*/
+#formulario{
+    width: 98%;
+    height: 96%;
+    border: 1px solid #e5e5e5;
+    margin: 1%;
+    position: fixed;
+    background: #ffffff;
+    overflow: auto;
+    z-index: 999;
+    display: none;
+}
+#formulario .conteudo-form{
+    max-width: 768px;
+    width: 768px;
+    min-width: 380px;
+    margin: 0 auto;
+}
+#formulario .conteudo-form h1{
+    margin: 40px 0 40px 0;
+    border-bottom: 2px solid #e5e5e5;
+    padding-bottom: 10px;
+}
+#formulario label p{
+    margin: 20px 0 5px 0;
+}
+#formulario label input,
+#formulario label select{
+    font-size: 1em;
+}
+#formulario .fechar{
+    background: #e5e5e5;
+    width: 50px;
+    position: fixed;
+    margin: 0;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #727272;
+    font-size: 1.8em;
+    text-align: center;
+    padding: 8px 0 8px 0;
+}
+
+#formulario fieldset{
+    border: 1px solid #e5e5e5;
+    max-height: 200px;
+    overflow: auto;
+    margin: 30px 0 30px 0;
+}
+#formulario fieldset legend{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#formulario table{
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+#formulario table thead tr th{
+    text-align: left;
+    background: #f2f2f2;
+    padding: 15px 5px 15px 10px;
+}
+#formulario table tbody tr td{
+    padding: 10px 5px 10px 10px;
+    border-bottom: 2px solid #f2f2f2;
+    font-size: 12px;
+}
+#formulario table tbody tr td img{
+    width: 25px;
+}
+
+#formulario .dividetela{
+    width: 45%;
+    margin: 0 0 0 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+#formulario .infocompra{
+    width: 45%;
+    background: #f2f2f2;
+    margin: 3% 0 0 4%;
+    padding: 20px;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    vertical-align: bottom;
+}
+#formulario .infocompra h3{
+    margin: 0 0 20px 0;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 10px;
+}
+#formulario .infocompra p{
+    font-size: 14px;
+    margin: 5px 0 5px 0;
+}
+#formulario .infocompra h2{
+    margin: 30px 0 0 0;
+}
+
+/*CONTEUDO PAGINA*/
+#header{
+    width: 100%;
+    height: 100px;
+    background: #ffffff;
+    position: fixed;
+    z-index: 99;
+}
+#header .logo{
+    display: inline-block;
+}
+#header .logo img{
+    display: block;
+}
+#header .menu{
+    display: none;
+    vertical-align: top;
+    top: 0;
+    margin: 0;
+    padding: 0 5px 0 5px;
+    background: #f2f2f2;
+    height: 96px;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+}
+#header .menu img{
+    margin-top: 23px;
+    display: block;
+}
+
+
+#menu{
+    width: 15%;
+    height: 100%;
+    top: 100px;
+    background: #282828;
+    vertical-align: top;
+    position: fixed;
+    z-index: 2;
+    overflow: auto;
+    color: #ffffff;
+}
+#menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 40px 0 0 0;
+}
+#menu ul li a{
+    display: block;
+    padding: 10px 0 10px 10px;
+    text-decoration: none;
+    color: #ffffff;
+}
+/*submenu*/
+#menu ul li:hover ul{
+    display: block;
+}
+#menu ul li ul{
+    margin: 0 0 20px 10px;
+    display: none;
+}
+#menu ul li ul li{
+    font-size: 0.8em;
+}
+#menu ul li ul li:hover{
+    background: #727272;
+}
+#menu ul li ul li a{
+    padding: 8px 0 8px 10px;
+}
+#menu .fechar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 10px 0 0 10px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+#conteudo{
+    width: 80%;
+    height: 79%;
+    min-height: 30%;
+    top: 120px;
+    left: 14%;
+    margin: 0 2% 0 2%;
+    padding: 30px;
+    background: #ffffff;
+    vertical-align: top;
+    position: relative;
+    border: 1px solid #e5e5e5;
+    overflow: auto;
+}
+#conteudo h1{
+    margin-bottom: 20px;
+}
+#conteudo .migalha{
+    margin: 0 0 10px 0;
+    font-size: 0.8em;
+}
+#conteudo table{
+    width: 100%;
+}
+#conteudo table thead{
+    background: #f2f2f2;
+}
+#conteudo table thead th{
+    padding: 15px;
+    text-align: left;
+}
+#conteudo table tbody td{
+    border-bottom: 2px solid #f2f2f2;
+}
+#conteudo table tbody td a{
+    padding: 15px 20px 15px 20px;
+    display: block;
+    text-decoration: none;
+    color: #181818;
+}
+#conteudo table tbody td a img{
+    width: 20px;
+}
+
+
+
+/*RELATORIO*/
+#relatorio{
+    width: 800px;
+    min-height: 100%;
+    padding: 10px 40px 40px 40px;
+    margin: 20px auto;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+}
+#relatorio .header-relatorio{
+    margin-bottom: 40px;
+    border-bottom: 3px solid #e5e5e5;
+}
+#relatorio .header-relatorio img{
+    display: inline-block;
+}
+#relatorio .header-relatorio p{
+    display: inline-block;
+    border: none;
+    padding: 0;
+    vertical-align: top;
+    text-align: right;
+    right: 0;
+    margin-left: 250px;
+    margin-top: 50px;
+}
+#relatorio h1{
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+#relatorio h2{
+    background: #f2f2f2;
+    padding: 10px 10px 10px 20px;
+    margin-top: 60px;
+}
+#relatorio h2 span{
+    font-size: 14px;
+    float: right;
+    margin: 7px 10px 10px 0;
+}
+#relatorio h3{
+    padding: 10px 10px 10px 20px;
+    font-size: 18px;
+    margin-top: 30px;
+}
+#relatorio h5{
+    padding: 10px 10px 10px 20px;
+    margin-top: -30px;
+    font-weight: 100;
+}
+#relatorio p{
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 10px;
+    padding-left: 25px;
+}
+#relatorio div{
+    border-bottom: 2px dashed #e5e5e5;
+    margin-bottom: 10px;
+}
+
+#relatorio dl{
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 10px;
+    padding-left: 25px;
+}
+#relatorio dl dd{
+    display: inline-block;
+    margin: 0;
+}
+#relatorio dl dt{
+    display: inline-block;
+    margin: 0;
+    font-weight: bold;
+    width: 150px;
+}
+#relatorio dl dt span{
+    margin-left: 100px;
+    color: #ffffff;
+}
+#relatorio table{
+    margin: 0 20px 60px 20px;
+    width: 95%;
+}
+#relatorio table tr td{
+    border: 1px solid #f2f2f2;
+    padding: 10px 10px 10px 20px;
+}
+#relatorio table tr th{
+    text-align: left;
+    background: #f2f2f2;
+    padding: 10px;
+}
+#relatorio table .totaltabela{
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 0 20px 10px;
+    border-bottom: 2px solid #f2f2f2;
+}
+#relatorio .estoque{
+    width: 100%;
+    margin: 0 0 60px 0;
+    border-bottom: 2px solid #f2f2f2;
+}
+#relatorio .estoque tr th{
+    font-size: 14px;
+    padding-left: 20px;
+}
+#relatorio .estoque tr td{
+    border: none;
+    border-bottom: 2px solid #f2f2f2;
+    font-size: 14px;
+}
+#relatorio .estoque tr td p{
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-weight: bold;
+}
+
+#relatorio .resumo{
+    width: 450px;
+    margin: 120px auto;
+    border: 1px solid #e5e5e5;
+    padding: 10px 20px 20px 20px;
+}
+#relatorio .resumo legend{
+    font-size: 35px;
+    font-weight: bold;
+}
+#relatorio .resumo dl dt{
+    width: 250px;
+}
+
+
+
+/*PAGINA DE LOGIN*/
+#login{
+    background: #cccccc url(../img/bg_login.jpg) no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+#login img{
+    margin: 40px 0 0 0;
+}
+
+#login .form-login{
+    width: 325px;
+    background: #ffffff;
+    text-align: left;
+    margin: 40px auto;
+    border: 3px solid #e5e5e5;
+    padding: 20px;
+}
+#login .form-login h1{
+    border-bottom: 2px solid #e5e5e5;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+#login .form-login p{
+    font-weight: bold;
+    font-size: 18px;
+}
+#login .form-login input[type=submit]{
+    margin: 20px 0 0 0;
+    background: #0082c8;
+    border: 1px solid #0082c8;
+    width: 315px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+//DASHBOARD
+#conteudo .resumo{
+}
+#conteudo .resumo dl{
+    display: inline-block;
+    margin: 40px 2% 20px 2%;
+    width: 20%;
+    text-align: center;
+    background: #f2f2f2;
+    vertical-align: top;
+}
+#conteudo .resumo dl dt,
+#conteudo .resumo dl dd{
+    margin: 0;
+    padding: 0;
+}
+#conteudo .resumo dl dt{
+    margin: 25px 0 0 0;
+}
+#conteudo .resumo dl dt img{
+    width: 40%;
+}
+#conteudo .resumo dl dt p{
+    margin-bottom: 0;
+}
+#conteudo .resumo dl dd h1{
+    font-size: 2.5em;
+    margin-top: 0;
+}
+
+#conteudo .lista-dashboard{
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    width: 42%;
+    vertical-align: top;
+    margin: 30px 2% 0 2%;
+    padding: 1%;
+    height: 40%;
+    overflow: auto;
+}
+#conteudo .lista-dashboard h2{
+    margin: 0 0 20px 0;
+}
+#conteudo .lista-dashboard table td{
+    padding: 15px;
+}
+
+
+
+#formulario .servico label select{
+    width: 100%;
+}
+#formulario .menu-lista{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 0;
+}
+#formulario .menu-lista li{
+    display: inline-block;
+    padding: 15px 25px 15px 25px;
+    margin: 0 0 0 0;
+    background: #f2f2f2;
+    border: 1px solid #e5e5e5;
+    cursor: pointer;
+    color: #282828;
+    font-weight: bold;
+}
+#menu-venda{
+    border-bottom: 1px solid #e5e5e5;
+    margin: 0 0 25px 0;
+}
+
+
+
+
+
+
+
+
+/*PAGINA RESPONSIVA*/
+@media screen and (max-width: 768px) {
+    #header .menu{
+        display: inline-block;
+    }
+    #menu{
+        width: 100%;
+        display: none;
+    }
+    #conteudo{
+        left: 0;
+        width: 80%;
+    }
+}

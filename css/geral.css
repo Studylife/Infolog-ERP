@@ -1,0 +1,181 @@
+
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    color: #494949;
+}
+/*BOTOES*/
+#botao1{
+    padding: 15px 30px 15px 30px;
+    font-size: 22px;
+    background: #07bf78;
+    color: #ffffff;
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
+#botaosalvar{
+    padding: 15px 30px 15px 30px;
+    font-size: 1.2em;
+    background: #ff7e00;
+    border: 1px solid #ff7e00;
+    color: #ffffff;
+}
+
+/*CONTEUDO GERAL*/
+input, select, textarea{
+    border: 2px solid #d8d8d8;
+    padding: 15px;
+    border-radius: 3px;
+}
+input:focus, select:focus, textarea:focus{
+    border: 2px solid #0082c8;
+}
+
+/*CONTEUDO*/
+#header{
+    height: 10%;
+}
+#header .logo{
+    display: inline-block;
+    vertical-align: top;
+}
+#header .botao-menu{
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
+#menu{
+    display: inline-block;
+    vertical-align: top;
+    left: -500px;;
+    width: 250px;
+    height: 100%;
+    min-width: 100px;
+    position: absolute;
+    background: #04a466;
+    margin: 0;
+    top: 0;
+    border-right: 2px solid #037f4f;
+}
+#menu div{
+    background: #037f4f;
+    padding: 20px;
+}
+#menu div h1{
+    margin: 0;
+    color: #ffffff
+}
+#menu ul{
+    list-style: none;
+    padding: 0;
+}
+#menu ul li{
+    border-bottom: 1px solid #049c61;
+}
+#menu ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px 10px 20px;
+    color: #ffffff;
+}
+#menu .fechar{
+    cursor: pointer;
+    position: absolute;
+    margin: 15px 0 0 220px;
+}
+
+#conteudo{
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    height: 84%;
+}
+#conteudo .lista{
+    border: 1px solid #efefef;
+    padding: 15px;
+    margin: 10px;
+    background: #ffffff;
+    height: 100%;
+}
+#conteudo .lista .filtro{
+    
+}
+#conteudo .lista .tabela{
+    width: 100%;
+    border: 1px solid #efefef;
+}
+#conteudo .lista .tabela th{
+    text-align: left;
+    border: 1px solid #efefef;
+    padding: 15px;
+    background: #efefef;
+}
+#conteudo .lista .tabela td{
+    border: 1px solid #efefef;
+}
+#conteudo .lista .tabela td a{
+    text-decoration: none;
+    color: #181818;
+    padding: 10px 10px 10px 15px;
+    display: block;
+}
+
+#formulario{
+    width: 50%;
+    min-width: 425px;
+    height: 100%;
+    right: 0;
+    border: 1px solid #d8d8d8;
+    background: #efefef;
+    top: 0;
+    position: fixed;
+    overflow: auto;
+    z-index: 999;
+    padding: 30px;
+}
+#formulario div{
+    background: #ffffff;
+    padding: 25px;
+    border: 1px solid #d8d8d8;
+    border-radius: 8px;
+    margin-top: 10px;
+    
+}
+#formulario div h1{
+    margin: 0 0 5px 0;
+}
+#formulario div h4{
+    margin: 0 0 40px 0;
+    font-weight: 100;
+}
+#formulario div p{
+    font-size: 1em;
+    margin: 0;
+}
+#formulario div input,
+#formulario div select{
+    margin: 5px 0 15px 0;
+}
+#formulario div .botoes{
+    border: none;
+    border-top: 1px solid #d8d8d8;
+    margin-top: 30px;
+    padding: 30px 0 0 0;
+}
+#formulario input{
+    display: block;
+}
+#formulario .fechar{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background: #efefef;
+    right: 0;
+    cursor: pointer;
+    margin: 0;
+    top: 0;
+}
